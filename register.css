@@ -1,0 +1,119 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background: url('https://images.pexels.com/photos/28380010/pexels-photo-28380010/free-photo-of-a-close-up-of-a-white-wall-with-a-pattern.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;
+    background-size: cover;
+    color: #000; /* Black for readability */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Header */
+h1 {
+    color: #1877F2; /* Blue */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form */
+form {
+    background-color: #e7f3ff; /* Light Blue */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center; /* Center text inside */
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #1877F2; /* Blue */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #1877F2; /* Blue */
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #1877F2; /* Blue */
+    color: #e7f3ff; /* Light Blue */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #165DBE; /* Darker Blue */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Message */
+h1.message {
+    margin-bottom: 15px;
+}
+
+h1.message.success {
+    color: #2d9f2d; /* Green */
+}
+
+h1.message.error {
+    color: #b91c1c; /* Red */
+}
+
+/* Link */
+p a {
+    color: #1877F2; /* Blue */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: #165DBE; /* Darker Blue */
+    text-decoration: underline;
+}
+
+input[type="button"] {
+    background-color: #2563eb; /* Facebook Blue */
+    color: #fff; /* White Text */
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+input[type="button"]:hover {
+    background-color: #1d4ed8; /* Darker Blue */
+    transform: scale(1.05); /* Slight grow effect on hover */
+}

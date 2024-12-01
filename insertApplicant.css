@@ -1,0 +1,202 @@
+/* General Reset */
+@import url('https://fonts.googleapis.com/css2?family=Quincy:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quincy', serif; /* Quincy Font */
+}
+
+/* Body */
+body {
+    background-color: #eaf4ff; /* Light Blue Background */
+    color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height for centering */
+    flex-direction: column;
+}
+
+/* Navbar */
+nav {
+    background-color: #0277bd; /* Medium Blue from reference */
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10; /* Keep navbar on top */
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for effect */
+    border-radius: 5px;
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-links a {
+    color: #b3e5fc; /* Light Blue Text */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav .nav-links a:hover {
+    background-color: #01579b; /* Darker Blue */
+}
+
+nav .welcome-message {
+    font-size: 18px;
+    font-weight: bold;
+    color: #b3e5fc; /* Light Blue */
+}
+
+/* Form */
+form {
+    background-color: #b3e5fc; /* Light Blue */
+    border: 2px solid #0277bd; /* Medium Blue */
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for a floating effect */
+}
+
+form p {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    color: #0277bd; /* Medium Blue */
+    margin-bottom: 5px;
+}
+
+form input[type="text"], form input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #0277bd; /* Medium Blue */
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+form input[type="submit"] {
+    background-color: #0277bd; /* Medium Blue */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #01579b; /* Darker Blue */
+}
+
+/* Table */
+.tableClass table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for style */
+}
+
+.tableClass th, .tableClass td {
+    border: 1px solid #0277bd; /* Medium Blue */
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.tableClass th {
+    background-color: #0277bd; /* Medium Blue */
+    color: #fff;
+    font-weight: bold;
+}
+
+.tableClass tr:nth-child(even) {
+    background-color: #e7f3ff; /* Light Blue */
+}
+
+.tableClass tr:nth-child(odd) {
+    background-color: #f0f8ff; /* Alice Blue */
+}
+
+.tableClass td {
+    color: #000;
+}
+
+.tableClass a {
+    color: #0277bd; /* Medium Blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tableClass a:hover {
+    color: #01579b; /* Darker Blue */
+    text-decoration: underline;
+}
+
+/* Add subtle transitions */
+form input[type="text"], form input[type="number"], 
+.tableClass a, nav .nav-links a {
+    transition: all 0.3s ease;
+}
+
+/* Messages */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1[style*="color: green;"] {
+    color: #0277bd; /* Medium Blue */
+}
+
+h1[style*="color: red;"] {
+    color: #d32f2f; /* Dark Red */
+}
+
+/* Links for search reset */
+.searchForm h3 a {
+    color: #0277bd; /* Medium Blue */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.searchForm h3 a:hover {
+    color: #01579b; /* Darker Blue */
+    text-decoration: underline;
+}
+
+/* Welcome Message */
+.welcome-message-container {
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #0277bd; /* Medium Blue */
+    color: #e7f3ff; /* Light Blue */
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}

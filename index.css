@@ -1,0 +1,177 @@
+/* General Reset */
+@import url('https://fonts.googleapis.com/css2?family=Quincy:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cambria', sans-serif; /* Cambria Font */
+}
+
+/* Body */
+body {
+    background: url('https://images.pexels.com/photos/28380010/pexels-photo-28380010/free-photo-of-a-close-up-of-a-white-wall-with-a-pattern.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;
+    background-size: cover;
+    color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height for centering */
+    flex-direction: column;
+}
+
+/* Navbar */
+nav {
+    background-color: #0277bd; /* Medium Blue from reference */
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10; /* Keep navbar on top */
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-links a {
+    color: #b3e5fc; /* Light Blue */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav .nav-links a:hover {
+    background-color: #01579b; /* Darker Blue */
+}
+
+nav .welcome-message {
+    font-size: 18px;
+    font-weight: bold;
+    color: #b3e5fc; /* Light Blue */
+}
+
+/* Search Form */
+.searchForm {
+    margin: 100px 0 20px; /* Top margin adjusted for the fixed navbar */
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    background-color: #b3e5fc; /* Light Blue */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for floating effect */
+}
+
+.searchForm input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #0277bd; /* Medium Blue */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.searchForm input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #0277bd; /* Medium Blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.searchForm input[type="submit"]:hover {
+    background-color: #01579b; /* Darker Blue */
+}
+
+/* Table */
+.tableClass table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tableClass th, .tableClass td {
+    border: 1px solid #0277bd; /* Medium Blue */
+    padding: 10px;
+    text-align: center;
+}
+
+.tableClass th {
+    background-color: #0277bd; /* Medium Blue */
+    color: #b3e5fc; /* Light Blue */
+    font-weight: bold;
+}
+
+.tableClass tr:nth-child(even) {
+    background-color: #e7f3ff; /* Light Blue */
+}
+
+.tableClass tr:nth-child(odd) {
+    background-color: #f0f8ff; /* Alice Blue */
+}
+
+.tableClass td {
+    color: #000;
+}
+
+.tableClass a {
+    color: #0277bd; /* Medium Blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tableClass a:hover {
+    color: #01579b; /* Darker Blue */
+    text-decoration: underline;
+}
+
+/* Messages */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1[style*="color: green;"] {
+    color: #0277bd; /* Medium Blue */
+}
+
+h1[style*="color: red;"] {
+    color: #d32f2f; /* Dark Red */
+}
+
+/* Links for search reset */
+.searchForm h3 a {
+    color: #0277bd; /* Medium Blue */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.searchForm h3 a:hover {
+    color: #01579b; /* Darker Blue */
+    text-decoration: underline;
+}
+
+/* Welcome Message */
+.welcome-message-container {
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #0277bd; /* Medium Blue */
+    color: #e7f3ff; /* Light Blue */
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}

@@ -1,0 +1,102 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background: url('https://images.pexels.com/photos/28380010/pexels-photo-28380010/free-photo-of-a-close-up-of-a-white-wall-with-a-pattern.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;
+    background-size: cover;
+    color: #000; /* Black for readability */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+}
+
+/* Header */
+h1 {
+    color: #0277bd; /* Medium Blue */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form */
+form {
+    background-color: #e7f3ff; /* Light Blue */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center; /* Center text inside */
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #0277bd; /* Medium Blue */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0277bd; /* Medium Blue */
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #0277bd; /* Medium Blue */
+    color: #e7f3ff; /* Light Blue */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #01579b; /* Darker Blue */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Message */
+h1.message {
+    margin-bottom: 15px;
+}
+
+h1.message.success {
+    color: #2d9f2d; /* Green */
+}
+
+h1.message.error {
+    color: #b91c1c; /* Red */
+}
+
+/* Link */
+p a {
+    color: #0277bd; /* Medium Blue */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: #01579b; /* Darker Blue */
+    text-decoration: underline;
+}
